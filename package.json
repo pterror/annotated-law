@@ -1,0 +1,17 @@
+{
+  "name": "annotated-law",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "cd web && bun run dev",
+    "build": "cd web && bun run build",
+    "typecheck": "tsgo --noEmit",
+    "lint": "oxlint src/"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.0.0",
+    "@typescript/native-preview": "^7.0.0-dev",
+    "oxlint": "^1.0.0"
+  }
+}

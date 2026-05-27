@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -e
+
+echo "Running typecheck..."
+staged=$(git diff --cached --name-only)
+bun run typecheck
+if [ -n "$staged" ]; then
+  echo "$staged" | xargs git add
+fi
+
+echo "Running lint..."
+bun run lint
+
+echo "Pre-commit checks passed!"

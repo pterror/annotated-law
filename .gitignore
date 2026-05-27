@@ -1,0 +1,30 @@
+# Build output
+dist/
+
+# Nix
+result
+.direnv/
+
+# Node / Bun
+node_modules/
+
+# Astro
+web/.astro/
+web/dist/
+
+# Secrets
+.envrc.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Normalize
+.normalize/*
+!.normalize/config.toml
+!.normalize/duplicate-functions-allow
+!.normalize/duplicate-types-allow
+!.normalize/hotspots-allow
+!.normalize/large-files-allow
+!.normalize/memory/
